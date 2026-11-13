@@ -4,6 +4,11 @@
 
 ![](/project.png)
 
+## Inputs
+
+- **wide_number** (number)
+
+
 
 
  
