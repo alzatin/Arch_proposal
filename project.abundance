@@ -1,13 +1,175 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-1",
-    "name": "Arch_proposal",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "Inches",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-1",
+  "name": "Arch_proposal",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Move",
+      "x": 0.482,
+      "y": 0.2659,
+      "uniqueID": "id-12",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 3,
+          "currentEquation": "3"
+        }
+      ]
+    },
+    {
+      "atomType": "Fusion",
+      "x": 0.59,
+      "y": 0.5801,
+      "uniqueID": "id-18",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "unionType": "Fusion"
+    },
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-2",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Color",
+      "x": 0.6893,
+      "y": 0.432,
+      "uniqueID": "id-23",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Glass"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.3253,
+      "y": 0.6556,
+      "uniqueID": "id-26",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 2.25
+        },
+        {
+          "name": "y length",
+          "ioValue": 3,
+          "currentEquation": "3"
+        }
+      ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.3273,
+      "y": 0.8852,
+      "uniqueID": "id-30",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 2.25
+        },
+        {
+          "name": "y length",
+          "ioValue": 3
+        }
+      ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.216,
+      "y": 0.5589,
+      "uniqueID": "id-4",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 4.5
+        },
+        {
+          "name": "y length",
+          "ioValue": 4.5,
+          "currentEquation": "4.5"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.366,
+      "y": 0.435,
+      "uniqueID": "id-8",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 0.1875,
+          "currentEquation": ".1875"
+        }
+      ]
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-12",
+      "ap2ID": "id-18"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-18",
+      "ap2ID": "id-23"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-4",
+      "ap2ID": "id-8"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-8",
+      "ap2ID": "id-12"
+    },
+    {
+      "ap2Name": "Shape2",
+      "ap1ID": "id-8",
+      "ap2ID": "id-18"
+    }
+  ],
+  "unitsKey": "Inches",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
