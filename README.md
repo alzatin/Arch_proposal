@@ -4,6 +4,11 @@
 
 ![](/project.png)
 
+## Inputs
+
+- **bracket_thick** (number)
+
+
 
 
  

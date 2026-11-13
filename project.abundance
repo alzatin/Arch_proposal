@@ -4,6 +4,13 @@
   "y": 0,
   "uniqueID": "id-1",
   "name": "Arch_proposal",
+  "ioValues": [
+    {
+      "name": "bracket_thick",
+      "ioValue": 0.125,
+      "currentEquation": "1/8"
+    }
+  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -386,8 +393,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.456,
-      "y": 0.577,
+      "x": 0.46,
+      "y": 0.5982,
       "uniqueID": "id-275",
       "name": "Linear-Pattern",
       "ioValues": [
@@ -412,8 +419,8 @@
         },
         {
           "name": "distZ",
-          "ioValue": 4.5,
-          "currentEquation": "4.5"
+          "ioValue": 4.625,
+          "currentEquation": "4.5 + bracket_thick"
         }
       ],
       "topLevel": false,
@@ -577,7 +584,7 @@
             },
             {
               "name": "distZ",
-              "ioValue": 4.5
+              "ioValue": 4.625
             }
           ],
           "interpreterVersion": 1,
@@ -751,6 +758,14 @@
       "unitsKey": "MM",
       "fileTypeVersion": 1,
       "lastReloadedFromGithubAt": 1794605730543
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0254,
+      "y": 0.4653,
+      "uniqueID": "id-448",
+      "name": "bracket_thick",
+      "options": []
     },
     {
       "atomType": "Molecule",
