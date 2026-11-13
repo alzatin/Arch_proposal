@@ -20,15 +20,15 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.324,
-      "y": 0.3353,
+      "x": 0.3473,
+      "y": 0.3776,
       "uniqueID": "id-452",
       "name": "New Molecule",
       "ioValues": [
         {
           "name": "bracket_thick",
-          "ioValue": 0.125,
-          "currentEquation": "1/8"
+          "ioValue": 0.25,
+          "currentEquation": "1/4"
         }
       ],
       "topLevel": false,
@@ -944,7 +944,7 @@
             },
             {
               "name": "distZ",
-              "ioValue": 4.625,
+              "ioValue": 4.75,
               "currentEquation": "4.5 + bracket_thick"
             }
           ],
@@ -1109,7 +1109,7 @@
                 },
                 {
                   "name": "distZ",
-                  "ioValue": 4.625
+                  "ioValue": 4.75
                 }
               ],
               "interpreterVersion": 1,
@@ -1311,6 +1311,36 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.2167,
+      "y": 0.5287,
+      "uniqueID": "id-695",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10,
+          "currentEquation": "10"
+        }
+      ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.168,
+      "y": 0.7885,
+      "uniqueID": "id-698",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 10,
+          "currentEquation": "10"
+        },
+        {
+          "name": "y length",
+          "ioValue": 10
+        }
+      ]
     }
   ],
   "allConnectors": [],
