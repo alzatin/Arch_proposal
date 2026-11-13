@@ -27,8 +27,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.584,
-      "y": 0.3323,
+      "x": 0.588,
+      "y": 0.3867,
       "uniqueID": "id-452",
       "name": "New Molecule",
       "ioValues": [
@@ -1321,8 +1321,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.1953,
-      "y": 0.5589,
+      "x": 0.196,
+      "y": 0.5831,
       "uniqueID": "id-695",
       "ioValues": [
         {
@@ -1370,7 +1370,7 @@
     {
       "atomType": "Input",
       "x": 0.0254,
-      "y": 0.4502,
+      "y": 0.4562,
       "uniqueID": "id-706",
       "name": "wide_number",
       "options": []
@@ -1392,59 +1392,9 @@
       ]
     },
     {
-      "atomType": "Rotate",
-      "x": 0.676,
-      "y": 0.7372,
-      "uniqueID": "id-724",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "x-axis degrees",
-          "ioValue": 90,
-          "currentEquation": "90"
-        },
-        {
-          "name": "y-axis degrees",
-          "ioValue": 0,
-          "currentEquation": "0"
-        },
-        {
-          "name": "z-axis degrees",
-          "ioValue": 0
-        }
-      ]
-    },
-    {
-      "atomType": "Move",
-      "x": 0.7427,
-      "y": 0.6586,
-      "uniqueID": "id-730",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 0
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": 0
-        }
-      ]
-    },
-    {
       "atomType": "Difference",
-      "x": 0.4853,
-      "y": 0.7402,
+      "x": 0.558,
+      "y": 0.6495,
       "uniqueID": "id-746",
       "ioValues": [
         {
@@ -1482,9 +1432,108 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.626,
+      "y": 0.7613,
+      "uniqueID": "id-756",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 90,
+          "currentEquation": "90"
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 90,
+          "currentEquation": "90"
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.7067,
+      "y": 0.8489,
+      "uniqueID": "id-762",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 9.05,
+          "currentEquation": "4.5*wide_number/2 - 2.2"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 40,
+          "currentEquation": "40"
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.7587,
+      "y": 0.3897,
+      "uniqueID": "id-768",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.816,
+      "y": 0.6858,
+      "uniqueID": "id-772",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 20,
+          "currentEquation": "20"
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
     }
   ],
   "allConnectors": [
+    {
+      "ap2Name": "retain",
+      "ap1ID": "id-452",
+      "ap2ID": "id-768"
+    },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-695",
@@ -1507,13 +1556,33 @@
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-724",
-      "ap2ID": "id-730"
+      "ap1ID": "id-746",
+      "ap2ID": "id-756"
     },
     {
       "ap2Name": "remove",
       "ap1ID": "id-750",
       "ap2ID": "id-746"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-756",
+      "ap2ID": "id-762"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-762",
+      "ap2ID": "id-768"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-768",
+      "ap2ID": "id-772"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-772",
+      "ap2ID": "id-2"
     }
   ],
   "unitsKey": "Inches",
